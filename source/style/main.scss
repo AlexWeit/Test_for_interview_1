@@ -1,0 +1,18 @@
+// VARIABLES
+
+//Colors
+
+
+//IMPORTS
+
+//helpers: mixins
+@import "helpers/mixins";
+
+//layout: setups, fonts
+@import "layout/setups";
+@import "layout/fonts";
+
+//blocks
+@import "blocks/mainpage";
+@import "blocks/header";
+@import "blocks/footer";
