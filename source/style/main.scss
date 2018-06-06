@@ -1,7 +1,10 @@
 // VARIABLES
 
 //Colors
-
+$white: #fff;
+$white-grey: #f1f1f1;
+$grey: #bebebe;
+$black: #202020;
 
 //IMPORTS
 
@@ -10,9 +13,11 @@
 
 //layout: setups, fonts
 @import "layout/setups";
+@import "layout/font-awesome";
 @import "layout/fonts";
 
 //blocks
 @import "blocks/mainpage";
 @import "blocks/header";
+@import "blocks/menu";
 @import "blocks/footer";
