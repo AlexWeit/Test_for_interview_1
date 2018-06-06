@@ -6,4 +6,27 @@ block title
 block content
 	include ../sections/header
 
-	h1.testClass Main Page Test Content
+	section.section.hero
+
+		nav.nav.hero__nav
+			include ../sections/menu
+
+		.hero__about
+
+			.about__photo
+				.hero__photo_container
+					img(src="assets/img/content/hero-photo.jpg").hero__photo_img
+			.about__description
+				h2.description__title About me
+				.description__text
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi ipsa obcaecati ipsam odit explicabo beatae necessitatibus, magni dolor. Rem nihil delectus accusantium quae molestiae id nulla atque.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum accusamus, libero quis quo, praesentium veritatis! Tempore!
+				.description__name Jason Wood
+
+		.scroll.skroll-content_down
+			p Keep scrolling, there is still more to come
+			a(href="#" id="icon-scroll_content").scroll-down__link
+				.scroll-down__icon
+
+block footer
+	include ../sections/footer
