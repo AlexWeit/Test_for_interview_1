@@ -1,3 +1,7 @@
+.body-active {
+	overflow: hidden;
+}
+
 .section {
 	display: flex;
 	flex-direction: column;
@@ -7,6 +11,10 @@
 
 .nav {
 	width: 90%;
+
+	@include phones {
+		width: 100%;
+	}
 }
 
 .menu {
