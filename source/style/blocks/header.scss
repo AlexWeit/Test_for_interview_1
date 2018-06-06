@@ -8,10 +8,71 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+
+	@include tablets {
+		height: 80vh;
+	}
+
+	@include phones {
+		height: 30vh;
+	    background-position: 41% 31%;
+		background-size: auto;
+	}
 }
 
 .header__nav {
 	border-bottom: 1px solid $white-grey;
+
+	@include phones {
+		border: none;
+		position: relative;
+	}
+}
+
+.header__menu {
+	@include phones {
+		display: none;
+	}
+}
+
+.header__menu_phones {
+	display: none;
+
+	@include phones {
+		height: 100vh;
+		background-color: rgba(255, 255, 255, 0.3);
+	}
+}
+
+.header__menu_phones-active {
+	@include phones {
+		display: block;
+	}
+}
+
+.header__menu_phones-btn {
+	display: none;
+	color: $white-grey;
+	//font-size: 24px;
+	text-transform: uppercase;
+
+	@include phones {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 40px 40px;
+	}
+}
+
+.infi-icon {
+	svg {
+		display: block;
+	}
+}
+
+.infi-text {
+	margin-left: 10px;
 }
 
 .scroll-header_down {
@@ -19,6 +80,10 @@
 
 	.scroll-down__link {
 		color: $white-grey;
+	}
+
+	@include tablets {
+		display: none;
 	}
 }
 

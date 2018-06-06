@@ -2,6 +2,14 @@ header.header
 	nav.nav.header__nav
 		.menu.header__menu
 			include ../sections/menu
+		.header__menu_phones
+			include ../sections/menu
+		a(href="#").header__menu_phones-btn
+			.infi-icon
+				svg(height="30", viewbox="0 0 30 30")
+					path(fill="none", stroke="white", stroke-width="3", d="M15,15 C30,0 30,30 15,15 C0,0 0,30 15,15z")
+			.infi-text Menu
+
 
 	.scroll.scroll-header_down
 		.scroll-down__text Scroll down to see more

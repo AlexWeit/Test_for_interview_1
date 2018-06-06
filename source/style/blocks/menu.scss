@@ -2,6 +2,16 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+
+	@include tablets {
+		justify-content: space-around; 
+	}
+
+	@include phones {
+		height: 100vh;
+		flex-direction: column;
+		justify-content: center;
+	}
 }
 
 .menu__item {
@@ -12,21 +22,31 @@
 	}
 
 	text-align: center;
+
+	@include desktop {
+		margin-left: 30px;
+	}
+
+	@include tablets {
+		margin-left: 0;
+	}
+
 }
 
-.header__menu {
+.header__menu, .header__menu_phones {
 	.menu__link {
 		color: $white-grey;
+		font-family: 'pt_sansregular', Arial, sans-serif;
 	}
 }
 
 .hero__menu {
 	.menu__link {
 		color: $grey;
+		font-family: 'nexa_lightregular', Arial, sans-serif;
 	}
 }
 
 .menu__link {
 	text-transform: uppercase;
-	font-size: 24px;
 }
